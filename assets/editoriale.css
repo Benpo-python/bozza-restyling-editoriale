@@ -1,13 +1,14 @@
 /* Bottega nel Web: direzione A, Editoriale raffinato */
 @font-face{font-family:"Newsreader";src:url("../font/newsreader.woff2") format("woff2");font-weight:450;font-style:normal;font-display:swap}
 @font-face{font-family:"Newsreader";src:url("../font/newsreader-italic.woff2") format("woff2");font-weight:450;font-style:italic;font-display:swap}
+@font-face{font-family:"Newsreader Fallback";src:local("Georgia");size-adjust:90%;ascent-override:95%;descent-override:30%;line-gap-override:0%}
 @font-face{font-family:"Hanken Grotesk";src:url("../font/HankenGrotesk-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
 :root{
   --fondo:#FFFFFF; --alt:#F4F4F1;
   --inchiostro:#111113; --t2:#4A4B51; --t3:#6E6E74;
   --linea:#E4E4E0; --linea-forte:#111113;
   --accento:#0E6B4D;
-  --serif:"Newsreader", Georgia, serif;
+  --serif:"Newsreader", "Newsreader Fallback", Georgia, serif;
   --sans:"Hanken Grotesk", system-ui, sans-serif;
   --w:1200px;
   --gap:clamp(80px,11vw,144px);
